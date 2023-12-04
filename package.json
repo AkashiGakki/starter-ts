@@ -48,6 +48,7 @@
     "prepare": "simple-git-hooks"
   },
   "devDependencies": {
+<<<<<<< HEAD
     "@antfu/eslint-config": "^1.2.1",
     "@antfu/ni": "^0.21.9",
     "@antfu/utils": "^0.7.6",
@@ -57,12 +58,28 @@
     "esno": "^4.0.0",
     "lint-staged": "^15.1.0",
     "pnpm": "^8.10.5",
+=======
+    "@antfu/eslint-config": "^2.2.2",
+    "@antfu/ni": "^0.21.12",
+    "@antfu/utils": "^0.7.6",
+    "@types/node": "^20.10.3",
+    "bumpp": "^9.2.0",
+    "eslint": "^8.55.0",
+    "esno": "^4.0.0",
+    "lint-staged": "^15.2.0",
+    "pnpm": "^8.11.0",
+>>>>>>> 1f834fb (chore: update deps)
     "rimraf": "^5.0.5",
     "simple-git-hooks": "^2.9.0",
     "typescript": "^5.2.2",
     "unbuild": "^2.0.0",
+<<<<<<< HEAD
     "vite": "^5.0.0",
     "vitest": "^1.0.0-beta.4"
+=======
+    "vite": "^5.0.5",
+    "vitest": "^1.0.0-beta.6"
+>>>>>>> 1f834fb (chore: update deps)
   },
   "simple-git-hooks": {
     "pre-commit": "pnpm lint-staged"
