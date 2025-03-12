@@ -45,6 +45,7 @@
     "prepare": "simple-git-hooks"
   },
   "devDependencies": {
+<<<<<<< HEAD
     "@antfu/eslint-config": "^2.2.2",
     "@antfu/ni": "^0.21.12",
     "@antfu/utils": "^0.7.6",
@@ -60,6 +61,24 @@
     "unbuild": "^2.0.0",
     "vite": "^5.0.5",
     "vitest": "^1.0.0-beta.6"
+=======
+    "@antfu/eslint-config": "catalog:cli",
+    "@antfu/ni": "catalog:cli",
+    "@antfu/utils": "catalog:inlined",
+    "@types/node": "catalog:types",
+    "bumpp": "catalog:cli",
+    "eslint": "catalog:cli",
+    "lint-staged": "catalog:cli",
+    "simple-git-hooks": "catalog:cli",
+    "tinyexec": "catalog:utils",
+    "tsx": "catalog:cli",
+    "typescript": "catalog:cli",
+    "unbuild": "catalog:cli",
+    "vite": "catalog:cli",
+    "vitest": "catalog:testing",
+    "vitest-package-exports": "catalog:testing",
+    "yaml": "catalog:testing"
+>>>>>>> 4d180f4 (chore: update deps)
   },
   "simple-git-hooks": {
     "pre-commit": "pnpm lint-staged"
