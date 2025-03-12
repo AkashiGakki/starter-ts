@@ -8,8 +8,18 @@
 
 _description_
 
+<<<<<<< HEAD
 > **Note**:
 > Replace `pkg-placeholder`, `_description_` and `antfu` globally to use this template.
+=======
+## Sponsors
+
+<p align="center">
+  <a href="https://cdn.jsdelivr.net/gh/antfu/static/sponsors.svg">
+    <img src='https://cdn.jsdelivr.net/gh/antfu/static/sponsors.svg'/>
+  </a>
+</p>
+>>>>>>> 6011481 (chore: add extension list)
 
 ## License
 
