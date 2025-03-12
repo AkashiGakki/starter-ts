@@ -1,4 +1,4 @@
-# pkg-placeholder
+# pkg-name
 
 [![npm version][npm-version-src]][npm-version-href]
 [![npm downloads][npm-downloads-src]][npm-downloads-href]
@@ -8,18 +8,8 @@
 
 _description_
 
-<<<<<<< HEAD
 > **Note**:
-> Replace `pkg-placeholder`, `_description_` and `antfu` globally to use this template.
-=======
-## Sponsors
-
-<p align="center">
-  <a href="https://cdn.jsdelivr.net/gh/antfu/static/sponsors.svg">
-    <img src='https://cdn.jsdelivr.net/gh/antfu/static/sponsors.svg'/>
-  </a>
-</p>
->>>>>>> 6011481 (chore: add extension list)
+> Replace `pkg-name` and `akashigakki` globally to use this template.
 
 ## License
 
