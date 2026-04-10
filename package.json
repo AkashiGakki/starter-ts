@@ -2,7 +2,7 @@
   "name": "pkg-placeholder",
   "type": "module",
   "version": "0.0.0",
-  "packageManager": "pnpm@10.25.0",
+  "packageManager": "pnpm@10.33.0",
   "description": "_description_",
   "author": "Anthony Fu <anthonyfu117@hotmail.com>",
   "license": "MIT",
@@ -46,17 +46,15 @@
     "lint-staged": "catalog:cli",
     "publint": "catalog:cli",
     "simple-git-hooks": "catalog:cli",
-    "tinyexec": "catalog:testing",
     "tsdown": "catalog:cli",
+    "tsnapi": "catalog:testing",
     "tsx": "catalog:cli",
     "typescript": "catalog:cli",
     "vite": "catalog:cli",
-    "vitest": "catalog:testing",
-    "vitest-package-exports": "catalog:testing",
-    "yaml": "catalog:testing"
+    "vitest": "catalog:testing"
   },
   "simple-git-hooks": {
-    "pre-commit": "pnpm i --frozen-lockfile --ignore-scripts --offline && npx lint-staged"
+    "pre-commit": "pnpm i --frozen-lockfile --ignore-scripts --offline && pnpm run build && npx lint-staged"
   },
   "lint-staged": {
     "*": "eslint --fix"

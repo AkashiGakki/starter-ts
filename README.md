@@ -20,7 +20,7 @@ Then for the future releases, you can run `pnpm run release` to do the release a
 
 <p align="center">
   <a href="https://cdn.jsdelivr.net/gh/antfu/static/sponsors.svg">
-    <img src='https://cdn.jsdelivr.net/gh/antfu/static/sponsors.svg'/>
+    <img src="https://cdn.jsdelivr.net/gh/antfu/static/sponsors.svg" alt="Sponsors"/>
   </a>
 </p>
 
