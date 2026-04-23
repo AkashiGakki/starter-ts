@@ -44,6 +44,9 @@ catalogs:
       specifier: ^9.3.0
       version: 9.3.0
   testing:
+    tsdown-stale-guard:
+      specifier: ^0.1.1
+      version: 0.1.1
     tsnapi:
       specifier: ^0.3.2
       version: 0.3.2
@@ -89,6 +92,9 @@ importers:
       tsdown:
         specifier: catalog:cli
         version: 0.21.10(publint@0.3.18)(synckit@0.11.12)(typescript@6.0.3)
+      tsdown-stale-guard:
+        specifier: catalog:testing
+        version: 0.1.1(tsdown@0.21.10(publint@0.3.18)(synckit@0.11.12)(typescript@6.0.3))
       tsnapi:
         specifier: catalog:testing
         version: 0.3.2(vitest@4.1.5(@types/node@25.6.0)(vite@8.0.9(@types/node@25.6.0)(esbuild@0.27.1)(jiti@2.6.1)(tsx@4.21.0)(yaml@2.8.3)))
@@ -492,6 +498,9 @@ packages:
 
   '@jridgewell/gen-mapping@0.3.13':
     resolution: {integrity: sha512-2kkt/7niJ6MgEPxF0bYdQ6etZaA+fQvDcLKckhy1yIQOzaoKjBBjSj63/aLVjYE3qhRt5dvM+uUyfCg6UKCBbA==}
+
+  '@jridgewell/remapping@2.3.5':
+    resolution: {integrity: sha512-LI9u/+laYG4Ds1TDKSJW2YPrIlcVYOwi2fUC6xB43lueCjgxV4lffOCZCtYFiH6TNOX+tQKXx97T4IKHbhyHEQ==}
 
   '@jridgewell/resolve-uri@3.1.2':
     resolution: {integrity: sha512-bRISgCIjP20/tbWSPWMEi54QVPRZExkuD9lJL+UIxUKtwVJA8wW1Trb1jMs1RFXo1CBTNZ/5hpC9QvmKWdopKw==}
@@ -1770,6 +1779,9 @@ packages:
     resolution: {integrity: sha512-9ie8ItPR6tjY5uYJh8K/Zrv/RMZ5VOlOWvtZdEHYSTFKZfIBPQa9tOAEeAWhd+AnIneLJ22w5fjOYtoutpWq5w==}
     engines: {node: '>=18'}
 
+  logs-sdk@0.0.6:
+    resolution: {integrity: sha512-G4M1C9aLLBOIWpmw/Lqk4zrap/T2IJsoUOuUDjRcVSLy6lHQqxr3wCqIT1FvvpYTUYpEwvu4utsMY42jTNvx8Q==}
+
   longest-streak@3.1.0:
     resolution: {integrity: sha512-9Ri+o0JYgehTaVBBDoMqIl8GXtbWg711O3srftcHhZ0dqnETqLaoIK0x17fUw9rFSlK/0NlsKe0Ahhyl5pXE2g==}
 
@@ -2029,10 +2041,6 @@ packages:
     resolution: {integrity: sha512-pMMHxBOZKFU6HgAZ4eyGnwXF/EvPGGqUr0MnZ5+99485wwW41kW91A4LOGxSHhgugZmSChL5AlElNdwlNgcnLQ==}
     engines: {node: ^10 || ^12 || >=14}
 
-  postcss@8.5.9:
-    resolution: {integrity: sha512-7a70Nsot+EMX9fFU3064K/kdHWZqGVY+BADLyXc8Dfv+mTLLVl6JzJpPaCZ2kQL9gIJvKXSLMHhqdRRjwQeFtw==}
-    engines: {node: ^10 || ^12 || >=14}
-
   prelude-ls@1.2.1:
     resolution: {integrity: sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==}
     engines: {node: '>= 0.8.0'}
@@ -2239,6 +2247,12 @@ packages:
     peerDependencies:
       typescript: '>=4.0.0'
 
+  tsdown-stale-guard@0.1.1:
+    resolution: {integrity: sha512-LeWJSseF0O4qZin0fCPfoO+8+LdbpMIP5LyVfpNy9WgvhWGPwxmn2W/9iWnY6IdXPZ1JfBp0pHTe2Bts8VVFWA==}
+    hasBin: true
+    peerDependencies:
+      tsdown: ^0.21.9
+
   tsdown@0.21.10:
     resolution: {integrity: sha512-3wk73yBhZe/wX7REqSdivNQ84TDs1mJ+IlnzrrEREP70xlJ/AEIzqaI04l/TzMKVIdkTdC3CPaADn2Lk/0SkdA==}
     engines: {node: '>=20.19.0'}
@@ -2319,6 +2333,10 @@ packages:
 
   unist-util-visit@5.0.0:
     resolution: {integrity: sha512-MR04uvD+07cwl/yhVuVWAtw+3GOR/knlL55Nd/wAdblk27GCVt3lqpTivy/tkJcZoNPzTwS1Y+KMojlLDhoTzg==}
+
+  unplugin@3.0.0:
+    resolution: {integrity: sha512-0Mqk3AT2TZCXWKdcoaufeXNukv2mTrEZExeXlHIOZXdqYoHHr4n51pymnwV8x2BOVxwXbK2HLlI7usrqMpycdg==}
+    engines: {node: ^20.19.0 || >=22.12.0}
 
   unrun@0.2.37:
     resolution: {integrity: sha512-AA7vDuYsgeSYVzJMm16UKA+aXFKhy7nFqW9z5l7q44K4ppFWZAMqYS58ePRZbugMLPH0fwwMzD5A8nP0avxwZQ==}
@@ -2431,6 +2449,9 @@ packages:
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
     peerDependencies:
       eslint: ^8.57.0 || ^9.0.0 || ^10.0.0
+
+  webpack-virtual-modules@0.6.2:
+    resolution: {integrity: sha512-66/V2i5hQanC51vBQKPH4aI8NMAcBW59FVBs+rC7eGHupMyfn34q7rZIE+ETlJ+XTevqfUhVVBgSUNSW2flEUQ==}
 
   which@2.0.2:
     resolution: {integrity: sha512-BLI3Tl1TW3Pvl70l3yq3Y64i+awpwXqsGBYWkkqMtnbXgrMD+yj7rhW0kuEDxzJaYXGjEW5ogapKNMEKNMjibA==}
@@ -2791,6 +2812,11 @@ snapshots:
   '@jridgewell/gen-mapping@0.3.13':
     dependencies:
       '@jridgewell/sourcemap-codec': 1.5.5
+      '@jridgewell/trace-mapping': 0.3.31
+
+  '@jridgewell/remapping@2.3.5':
+    dependencies:
+      '@jridgewell/gen-mapping': 0.3.13
       '@jridgewell/trace-mapping': 0.3.31
 
   '@jridgewell/resolve-uri@3.1.2': {}
@@ -3241,7 +3267,7 @@ snapshots:
       '@vue/shared': 3.5.13
       estree-walker: 2.0.2
       magic-string: 0.30.21
-      postcss: 8.5.9
+      postcss: 8.5.10
       source-map-js: 1.2.1
 
   '@vue/compiler-ssr@3.5.13':
@@ -3976,6 +4002,12 @@ snapshots:
       strip-ansi: 7.1.0
       wrap-ansi: 9.0.0
 
+  logs-sdk@0.0.6:
+    dependencies:
+      magic-string: 0.30.21
+      oxc-parser: 0.126.0
+      unplugin: 3.0.0
+
   longest-streak@3.1.0: {}
 
   magic-string@0.30.21:
@@ -4449,12 +4481,6 @@ snapshots:
       picocolors: 1.1.1
       source-map-js: 1.2.1
 
-  postcss@8.5.9:
-    dependencies:
-      nanoid: 3.3.11
-      picocolors: 1.1.1
-      source-map-js: 1.2.1
-
   prelude-ls@1.2.1: {}
 
   publint@0.3.18:
@@ -4663,6 +4689,13 @@ snapshots:
       picomatch: 4.0.4
       typescript: 6.0.3
 
+  tsdown-stale-guard@0.1.1(tsdown@0.21.10(publint@0.3.18)(synckit@0.11.12)(typescript@6.0.3)):
+    dependencies:
+      cac: 7.0.0
+      logs-sdk: 0.0.6
+      tsdown: 0.21.10(publint@0.3.18)(synckit@0.11.12)(typescript@6.0.3)
+      yaml: 2.8.3
+
   tsdown@0.21.10(publint@0.3.18)(synckit@0.11.12)(typescript@6.0.3):
     dependencies:
       ansis: 4.2.0
@@ -4758,6 +4791,12 @@ snapshots:
       unist-util-is: 6.0.0
       unist-util-visit-parents: 6.0.1
 
+  unplugin@3.0.0:
+    dependencies:
+      '@jridgewell/remapping': 2.3.5
+      picomatch: 4.0.4
+      webpack-virtual-modules: 0.6.2
+
   unrun@0.2.37(synckit@0.11.12):
     dependencies:
       rolldown: 1.0.0-rc.17
@@ -4829,6 +4868,8 @@ snapshots:
       semver: 7.7.4
     transitivePeerDependencies:
       - supports-color
+
+  webpack-virtual-modules@0.6.2: {}
 
   which@2.0.2:
     dependencies:
