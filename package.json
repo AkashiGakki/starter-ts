@@ -27,12 +27,23 @@
     "build": "tsdown",
     "dev": "tsdown --watch",
     "lint": "eslint",
-    "prepublishOnly": "nr build",
+    "prepack": "nr build",
     "release": "bumpp",
     "start": "tsx src/index.ts",
     "test": "pnpm run build && vitest",
     "typecheck": "tsc",
     "prepare": "git config core.hooksPath .githooks && simple-git-hooks && skills-npm"
+  },
+  "scripts-info": {
+    "build": "Build the library for publishing",
+    "dev": "Rebuild on change during development",
+    "lint": "Check for code style issues",
+    "prepack": "Build before publishing",
+    "release": "Bump version and publish a release",
+    "start": "Run the entry file",
+    "test": "Run the test suite",
+    "typecheck": "Check types",
+    "prepare": "Set up git hooks and skills"
   },
   "devDependencies": {
     "@antfu/eslint-config": "catalog:cli",
